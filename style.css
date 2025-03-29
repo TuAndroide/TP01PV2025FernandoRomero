@@ -1,0 +1,105 @@
+.logo{
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+}
+.cultura {
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1361120271/es/foto/la-ruta-hacia-las-monta%C3%B1as.jpg?s=612x612&w=0&k=20&c=hw_NMQYaIFQoz62bbS8_oXSx7GxylTU_ZDoNcyWN1Po=);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.museos {
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIPf_PbPXs5M-e1QEDgoMa9O3aQE2oC6sWw&s=);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.contacto{
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-5l-N4Qj8fZrFTWMnK1KD36EURQpSfoyU0g&s=);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1e5a20;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+.contenedor {
+    padding: 20px;
+}
+.seccion {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+img {
+    max-width: 150%;
+    border-radius: 50px;
+}
+.pie_pagina{
+    padding: 15px;
+    margin: 20px;
+    background:transparent
+}
+.seccion .indices a{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(61, 206, 4);
+    border-radius: 10px;
+}
+.seccion .indices{
+    background-color: rgb(215, 218, 218);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+p{
+    color: black;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 40px
+}
+.boton{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(45, 11, 194);
+    background-color: rgb(233, 228, 228);
+    border-radius: 100px;
+}
+.tabla, th, td{
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    color: rgb(143, 238, 19);
+    font-size: 22px;
+
+}
+th,td{
+    padding: 10px;
+}
