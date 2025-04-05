@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body class="contacto">
-    <header>Contactar Museos</header>
-    <div class="seccion" style="background:transparent;">
-        <nav class="indices" style="background:transparent;">
-        <a href="index.html" style="text-decoration: none;">Pagina Principal</a>
-        <a href="museos.html" style="text-decoration: none;">Museos</a>
-        </nav>
-    </div>
-    <div>
-        <table class="tabla" style="width: 100%;">
-            <tr>
-                <th>Nombre</th>
-                <th>Direccion</th>
-                <th>Correo Electronico</th>
-                <th>Dias y Horario de visita</th>
-            </tr>
-            <tr>
-                <td>Museo Historico Provincial “JUAN GALO LAVALLE”</td>
-                <td>Calle Lavalle N° 256</td>
-                <td>museohistoricoprovincial@gmail.com</td>
-                <td>Martes a Viernes de 8:00 a 19:00 hs. Sábados Domingos y Feriados de 09:00 a 19:00 hs.</td>
-            </tr>
-            <tr>
-                <td>Museo de Arte Sacro San Francisco</td>
-                <td>Calle Belgrano 677, detrás de la Basílica San Francisco.</td>
-                <td>museofranciscanojujuy@gmail.com</td>
-                <td>Lunes a viernes
-                    De 09:00 a 13:00 Y 
-                    De 17:00 a 21:00</td>
-            </tr>
-            <tr>
-                <td>Museo Arqueológico y Antropológico “Dr. Eduardo Casanova”</td>
-                <td>Calle Dr Manuel Belgrano 445, Tilcara Y4624AFI Argentina</td>
-                <td>tilcara.comunicacion@filo.uba.ar </td>
-                <td>Martes a domingos de 9.00hs. a 18.30hs.</td>
-            </tr>
-        </table>
-    </div>
+    <main>
+        <header>Contactar Museos</header>
+        <div class="seccion" style="background:transparent;">
+            <nav class="indices" style="background:transparent;">
+            <a href="index.html" style="text-decoration: none;">Pagina Principal</a>
+            <a href="museos.html" style="text-decoration: none;">Museos</a>
+            </nav>
+        </div>
+        <div>
+            <table class="tabla" style="width: 100%;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Correo Electronico</th>
+                    <th>Dias y Horario de visita</th>
+                </tr>
+                <tr>
+                    <td>Museo Historico Provincial “JUAN GALO LAVALLE”</td>
+                    <td>Calle Lavalle N° 256</td>
+                    <td>museohistoricoprovincial@gmail.com</td>
+                    <td>Martes a Viernes de 8:00 a 19:00 hs. Sábados Domingos y Feriados de 09:00 a 19:00 hs.</td>
+                </tr>
+                <tr>
+                    <td>Museo de Arte Sacro San Francisco</td>
+                    <td>Calle Belgrano 677, detrás de la Basílica San Francisco.</td>
+                    <td>museofranciscanojujuy@gmail.com</td>
+                    <td>Lunes a viernes
+                        De 09:00 a 13:00 Y 
+                        De 17:00 a 21:00</td>
+                </tr>
+                <tr>
+                    <td>Museo Arqueológico y Antropológico “Dr. Eduardo Casanova”</td>
+                    <td>Calle Dr Manuel Belgrano 445, Tilcara Y4624AFI Argentina</td>
+                    <td>tilcara.comunicacion@filo.uba.ar </td>
+                    <td>Martes a domingos de 9.00hs. a 18.30hs.</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <form method="post">
+            <label for="Nombre"></label>
+            <input type="text" placeholder="Ingrese su Nombre" name="nombre" id="Nombre" required>
+
+            <label for="Apellido"></label>
+            <input type="text" placeholder="Ingrese su Apellido" name="apellido" id="Apellido" required>
+            <br>
+            <label for="Msg"></label>
+            <textarea name="Mensaje" id="Msg" rows="4" required placeholder="Mensaje"></textarea>
+            <br>
+            <label for="motivo" style="color: aqua;">Motivo de contacto:</label>
+            <select name="motivo" id="motivo">
+                <option value="Consulta">Consulta</option>
+                <option value="Comentario">Comentario</option>
+                <option value="Sugerencia">Sugerencia</option>
+            </select>
+            <br><br>
+            <input id="boton" type="submit" value="Enviar" onclick="enviarformulario()">
+        </form>
+    </main>
     <footer>
         <div class="pie_pagina">
             <p>&copy; 2025 Museos de Jujuy | Todos los derechos reservados</p>
@@ -61,6 +83,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        function enviarformulario(){
+            event.preventDefault();
+            var Apellido = document.getElementById("Apellido").value;
+            var Nombre = document.getElementById("Nombre").value;
+            console.log("Nombre: ", Nombre);
+            console.log("Apellido: ", Apellido);
+            console.log("Mensaje: ", Msg.value);
+            console.log("Motivo: ",motivo.value);
+            alert("Nombre: " + Nombre + " y Apellido: " + Apellido);
+        }
+    </script>
 </body>
 
 </html>
